@@ -1,37 +1,575 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class=" ">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ImSanty</title>
-  <link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->
+	<link rel="icon" href="/assets/icon.png">
+	<title>ImSanty</title>
+	<link rel="stylesheet" href="/assets/css/style.css" />
+	<script type="module" src="/assets/js/page.js"></script>
 </head>
 
-<body>
-  <div class="header">
-    <!-- Header content goes here -->
-  </div>
-
-  <div class="container">
-    <h1>Hello, I'm Santi Agüero</h1>
-    <p>Welcome to my creative space. I'm passionate about coding.</p>
-    <div class="creations">
-      <div class="creation">
-        <!-- <img src="creation1.jpg" alt="Creation 1"> -->
-      </div>
-      <div class="creation">
-        <img src="creation2.jpg" alt="Creation 2">
-      </div>
-      <div class="creation">
-        <!-- <img src="creation3.jpg" alt="Creation 3"> -->
-      </div>
-    </div>
-  </div>
-
-  <div class="footer">
-    <!-- Footer content goes here -->
-  </div>
+<body class="scroll-smooth md:mb-0 w-full bg-slate-50 bg-top ">
+	<div class=" mx-auto p-4 lg:w-[80ch]">
+		<header class="flex justify-between items-center py-4 mb-16 relative z-10 header">
+			<div class="max-content">
+				<h1 class="font-bold font-mono text-xl">
+					&lt;<span class="text-indigo-500">ImSanty</span>
+					/&gt;
+				</h1>
+			</div>
+		</header>
+		<main class="relative z-10 mx-auto">
+			<article class="mb-40" id="about">
+				<header class="mb-4">
+					<p class="text-slate-500 mb-2">Hey there! 👋</p>
+					<h1 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-pink-600">I'm
+						Santiago Agüero
+					</h1>
+					<p class="italic text-slate-500">Software & Front-end Developer
+					</p>
+				</header>
+				<p>ESP/ENG • 20yo • Java Programmer • Web Developer • 3D Artist • Modder for @Minecraft • Incomplete time singer
+					• besides other things.
+				</p>
+				<footer class="mt-8">
+					<ul class="flex items-center gap-4 mt-4 flex-wrap">
+						<li class="relative inline-block group">
+							<span
+								class="w-full h-full  bg-gray-500 ml-0.5 mt-0.5 rounded-lg absolute left-0 top-0 group-active:m-0 group-hover:bg-indigo-950 transition-all group-hover:ml-1 group-hover:mt-1"></span>
+							<a href="https://www.youtube.com/ImSanty"
+								class=" flex items-center gap-2 bg-white relative z-20 rounded-md px-4 py-2 border border-gray-900 font-medium hover:text-gray-950 text-gray-700 text-sm"
+								target="_blank" rel="noopener noreferrer">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+									<path
+										d="M10 9.333l5.333 2.662-5.333 2.672v-5.334zm14-4.333v14c0 2.761-2.238 5-5 5h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14c2.762 0 5 2.239 5 5zm-4 7c-.02-4.123-.323-5.7-2.923-5.877-2.403-.164-7.754-.163-10.153 0-2.598.177-2.904 1.747-2.924 5.877.02 4.123.323 5.7 2.923 5.877 2.399.163 7.75.164 10.153 0 2.598-.177 2.904-1.747 2.924-5.877z" />
+								</svg>
+								Youtube
+							</a>
+						</li>
+						<li class="relative inline-block group">
+							<span
+								class="w-full h-full  bg-gray-500 ml-0.5 mt-0.5 rounded-lg absolute left-0 top-0 group-active:m-0 group-hover:bg-indigo-950 transition-all group-hover:ml-1 group-hover:mt-1"></span>
+							<a href="https://github.com/ImSanty"
+								class=" flex items-center gap-2 bg-white relative z-20 rounded-md px-4 py-2 border border-gray-900 font-medium hover:text-gray-950 text-gray-700 text-sm"
+								target="_blank" rel="noopener noreferrer">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+									<path
+										d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z" />
+								</svg>
+								GitHub
+							</a>
+						</li>
+						<li class="relative inline-block group">
+							<span
+								class="w-full h-full  bg-gray-500 ml-0.5 mt-0.5 rounded-lg absolute left-0 top-0 group-active:m-0 group-hover:bg-indigo-950 transition-all group-hover:ml-1 group-hover:mt-1"></span>
+							<a href="https://www.twitter.com/imsanty_"
+								class=" flex items-center gap-2 bg-white relative z-20 rounded-md px-4 py-2 border border-gray-900 font-medium hover:text-gray-950 text-gray-700 text-sm"
+								target="_blank" rel="noopener noreferrer">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+									<path
+										d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-.139 9.237c.209 4.617-3.234 9.765-9.33 9.765-1.854 0-3.579-.543-5.032-1.475 1.742.205 3.48-.278 4.86-1.359-1.437-.027-2.649-.976-3.066-2.28.515.098 1.021.069 1.482-.056-1.579-.317-2.668-1.739-2.633-3.26.442.246.949.394 1.486.411-1.461-.977-1.875-2.907-1.016-4.383 1.619 1.986 4.038 3.293 6.766 3.43-.479-2.053 1.08-4.03 3.199-4.03.943 0 1.797.398 2.395 1.037.748-.147 1.451-.42 2.086-.796-.246.767-.766 1.41-1.443 1.816.664-.08 1.297-.256 1.885-.517-.439.656-.996 1.234-1.639 1.697z" />
+								</svg>
+								Twitter
+							</a>
+						</li>
+						<li class="relative inline-block group">
+							<span
+								class="w-full h-full  bg-gray-500 ml-0.5 mt-0.5 rounded-lg absolute left-0 top-0 group-active:m-0 group-hover:bg-indigo-950 transition-all group-hover:ml-1 group-hover:mt-1"></span>
+							<a href="https://www.instagram.com/santiaguero_0"
+								class=" flex items-center gap-2 bg-white relative z-20 rounded-md px-4 py-2 border border-gray-900 font-medium hover:text-gray-950 text-gray-700 text-sm"
+								target="_blank" rel="noopener noreferrer">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+									<path
+										d="M15.233 5.488c-.843-.038-1.097-.046-3.233-.046s-2.389.008-3.232.046c-2.17.099-3.181 1.127-3.279 3.279-.039.844-.048 1.097-.048 3.233s.009 2.389.047 3.233c.099 2.148 1.106 3.18 3.279 3.279.843.038 1.097.047 3.233.047 2.137 0 2.39-.008 3.233-.046 2.17-.099 3.18-1.129 3.279-3.279.038-.844.046-1.097.046-3.233s-.008-2.389-.046-3.232c-.099-2.153-1.111-3.182-3.279-3.281zm-3.233 10.62c-2.269 0-4.108-1.839-4.108-4.108 0-2.269 1.84-4.108 4.108-4.108s4.108 1.839 4.108 4.108c0 2.269-1.839 4.108-4.108 4.108zm4.271-7.418c-.53 0-.96-.43-.96-.96s.43-.96.96-.96.96.43.96.96-.43.96-.96.96zm-1.604 3.31c0 1.473-1.194 2.667-2.667 2.667s-2.667-1.194-2.667-2.667c0-1.473 1.194-2.667 2.667-2.667s2.667 1.194 2.667 2.667zm4.333-12h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm.952 15.298c-.132 2.909-1.751 4.521-4.653 4.654-.854.039-1.126.048-3.299.048s-2.444-.009-3.298-.048c-2.908-.133-4.52-1.748-4.654-4.654-.039-.853-.048-1.125-.048-3.298 0-2.172.009-2.445.048-3.298.134-2.908 1.748-4.521 4.654-4.653.854-.04 1.125-.049 3.298-.049s2.445.009 3.299.048c2.908.133 4.523 1.751 4.653 4.653.039.854.048 1.127.048 3.299 0 2.173-.009 2.445-.048 3.298z" />
+								</svg>
+								Instagram
+							</a>
+						</li>
+					</ul>
+				</footer>
+			</article>
+			<style>
+				astro-island,
+				astro-slot,
+				astro-static-slot {
+					display: contents
+				}
+			</style>
+			<script>
+				(() => {
+					var i = t => {
+						let e = async () => {
+							await (await t())()
+						}
+							;
+						"requestIdleCallback" in window ? window.requestIdleCallback(e) : setTimeout(e, 200)
+					}
+						;
+					(self.Astro || (self.Astro = {})).idle = i;
+					window.dispatchEvent(new Event("astro:idle"));
+				}
+				)();
+				; (() => {
+					var d;
+					{
+						let p = {
+							0: t => u(t),
+							1: t => l(t),
+							2: t => new RegExp(t),
+							3: t => new Date(t),
+							4: t => new Map(l(t)),
+							5: t => new Set(l(t)),
+							6: t => BigInt(t),
+							7: t => new URL(t),
+							8: t => new Uint8Array(t),
+							9: t => new Uint16Array(t),
+							10: t => new Uint32Array(t)
+						}
+							, h = t => {
+								let [e, n] = t;
+								return e in p ? p[e](n) : void 0
+							}
+							, l = t => t.map(h)
+							, u = t => typeof t != "object" || t === null ? t : Object.fromEntries(Object.entries(t).map(([e, n]) => [e, h(n)]));
+						customElements.get("astro-island") || customElements.define("astro-island", (d = class extends HTMLElement {
+							constructor() {
+								super(...arguments);
+								this.hydrate = async () => {
+									var i;
+									if (!this.hydrator || !this.isConnected)
+										return;
+									let e = (i = this.parentElement) == null ? void 0 : i.closest("astro-island[ssr]");
+									if (e) {
+										e.addEventListener("astro:hydrate", this.hydrate, {
+											once: !0
+										});
+										return
+									}
+									let n = this.querySelectorAll("astro-slot")
+										, o = {}
+										, a = this.querySelectorAll("template[data-astro-template]");
+									for (let r of a) {
+										let s = r.closest(this.tagName);
+										s != null && s.isSameNode(this) && (o[r.getAttribute("data-astro-template") || "default"] = r.innerHTML,
+											r.remove())
+									}
+									for (let r of n) {
+										let s = r.closest(this.tagName);
+										s != null && s.isSameNode(this) && (o[r.getAttribute("name") || "default"] = r.innerHTML)
+									}
+									let c;
+									try {
+										c = this.hasAttribute("props") ? u(JSON.parse(this.getAttribute("props"))) : {}
+									} catch (r) {
+										let s = this.getAttribute("component-url") || "<unknown>"
+											, y = this.getAttribute("component-export");
+										throw y && (s += ` (export ${y})`),
+										console.error(`[hydrate] Error parsing props for component ${s}`, this.getAttribute("props"), r),
+										r
+									}
+									await this.hydrator(this)(this.Component, c, o, {
+										client: this.getAttribute("client")
+									}),
+										this.removeAttribute("ssr"),
+										this.dispatchEvent(new CustomEvent("astro:hydrate"))
+								}
+							}
+							connectedCallback() {
+								!this.hasAttribute("await-children") || this.firstChild ? this.childrenConnectedCallback() : new MutationObserver((e, n) => {
+									n.disconnect(),
+										setTimeout(() => this.childrenConnectedCallback(), 0)
+								}
+								).observe(this, {
+									childList: !0
+								})
+							}
+							async childrenConnectedCallback() {
+								let e = this.getAttribute("before-hydration-url");
+								e && await import(e),
+									this.start()
+							}
+							start() {
+								let e = JSON.parse(this.getAttribute("opts"))
+									, n = this.getAttribute("client");
+								if (Astro[n] === void 0) {
+									window.addEventListener(`astro:${n}`, () => this.start(), {
+										once: !0
+									});
+									return
+								}
+								Astro[n](async () => {
+									let o = this.getAttribute("renderer-url")
+										, [a, { default: c }] = await Promise.all([import(this.getAttribute("component-url")), o ? import(o) : () => () => { }
+										])
+										, i = this.getAttribute("component-export") || "default";
+									if (!i.includes("."))
+										this.Component = a[i];
+									else {
+										this.Component = a;
+										for (let r of i.split("."))
+											this.Component = this.Component[r]
+									}
+									return this.hydrator = c,
+										this.hydrate
+								}
+									, e, this)
+							}
+							attributeChangedCallback() {
+								this.hydrate()
+							}
+						}
+							,
+							d.observedAttributes = ["props"],
+							d))
+					}
+				}
+				)();
+			</script>
+			<div>
+				<div>
+					<h2 class="text-2xl font-bold text-gray-700 my-4" id="projects">Bedrock Add-ons</h2>
+				</div>
+				<ul class="grid grid-cols-[repeat(auto-fill,minmax(min(260px,100%),1fr))] gap-2 transition-all">
+					<li class="border border-gray-500 rounded-lg overflow-hidden bg-white flex flex-col  transition-all group">
+						<iframe width="100%" height=180" src="https://www.youtube.com/embed/bIvn8sPnPgw?&mute=1"></iframe>
+						<div class="p-5">
+							<h3 class="font-bold text-lg mt-4">Jetpack Add-on [Release] - Review Completa - ImSanty Add-ons</h3>
+							<article class="mb-2" id="about">
+								<footer class="mt-4">
+					<li class="relative inline-block group">
+						<span
+							class="w-full h-full  bg-gray-500 ml-0.5 mt-0.5 rounded-lg absolute left-0 top-0 group-active:m-0 group-hover:bg-indigo-950 transition-all group-hover:ml-1 group-hover:mt-1"></span>
+						<a href="https://mcpedl.com/jetpack-addon-2/"
+							class=" flex items-center gap-2 bg-white relative z-20 rounded-md px-4 py-2 border border-gray-900 font-medium hover:text-gray-950 text-gray-700 text-sm"
+							target="_blank" rel="noopener noreferrer">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+								<path
+									d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm2 9h-4v-1h4v1zm0-3v1h-4v-1h4zm-2 13l-6-6h4v-3h4v3h4l-6 6z" />
+							</svg>
+							MCPEDL
+						</a>
+					</li>
+					</footer>
+					</article>
+			</div>
+			</li>
+			<li class="border border-gray-500 rounded-lg overflow-hidden bg-white flex flex-col  transition-all group">
+				<iframe width="100%" height=180" src="https://www.youtube.com/embed/a3_pW6Qdyvk?&mute=1"></iframe>
+				<div class="p-5">
+					<h3 class="font-bold text-lg mt-4">ExoSkeleton Add-on [Release] - Review Completa - ImSanty Add-ons</h3>
+					<article class="mb-2" id="about">
+						<footer class="mt-4">
+			<li class="relative inline-block group">
+				<span
+					class="w-full h-full  bg-gray-500 ml-0.5 mt-0.5 rounded-lg absolute left-0 top-0 group-active:m-0 group-hover:bg-indigo-950 transition-all group-hover:ml-1 group-hover:mt-1"></span>
+				<a href="https://mcpedl.com/exoskeleton-add-on/"
+					class=" flex items-center gap-2 bg-white relative z-20 rounded-md px-4 py-2 border border-gray-900 font-medium hover:text-gray-950 text-gray-700 text-sm"
+					target="_blank" rel="noopener noreferrer">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+						<path
+							d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm2 9h-4v-1h4v1zm0-3v1h-4v-1h4zm-2 13l-6-6h4v-3h4v3h4l-6 6z" />
+					</svg>
+					MCPEDL
+				</a>
+			</li>
+			</footer>
+			</article>
+	</div>
+	</li>
+	<li class="border border-gray-500 rounded-lg overflow-hidden bg-white flex flex-col  transition-all group">
+		<iframe width="100%" height=180" src="https://www.youtube.com/embed/HamqEpULa4Y?&mute=1"></iframe>
+		<div class="p-5">
+			<h3 class="font-bold text-lg mt-4">Concept Bee Add-on [Release] - Review Completa - ImSanty Add-ons</h3>
+			<article class="mb-2" id="about">
+				<footer class="mt-4">
+	<li class="relative inline-block group">
+		<span
+			class="w-full h-full  bg-gray-500 ml-0.5 mt-0.5 rounded-lg absolute left-0 top-0 group-active:m-0 group-hover:bg-indigo-950 transition-all group-hover:ml-1 group-hover:mt-1"></span>
+		<a href="https://mcpedl.com/concept-bee-add-on/"
+			class=" flex items-center gap-2 bg-white relative z-20 rounded-md px-4 py-2 border border-gray-900 font-medium hover:text-gray-950 text-gray-700 text-sm"
+			target="_blank" rel="noopener noreferrer">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+				<path
+					d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm2 9h-4v-1h4v1zm0-3v1h-4v-1h4zm-2 13l-6-6h4v-3h4v3h4l-6 6z" />
+			</svg>
+			MCPEDL
+		</a>
+	</li>
+	</footer>
+	</article>
+	</div>
+	</li>
+	<li class="border border-gray-500 rounded-lg overflow-hidden bg-white flex flex-col  transition-all group">
+		<iframe width="100%" height=180" src="https://www.youtube.com/embed/3E4_ytkOgro?&mute=1"></iframe>
+		<div class="p-5">
+			<h3 class="font-bold text-lg mt-4">ThanosGauntlet Add-on v2 [Release] - Review Completa - ImSanty Add-ons</h3>
+			<article class="mb-2" id="about">
+				<footer class="mt-4">
+	<li class="relative inline-block group">
+		<span
+			class="w-full h-full  bg-gray-500 ml-0.5 mt-0.5 rounded-lg absolute left-0 top-0 group-active:m-0 group-hover:bg-indigo-950 transition-all group-hover:ml-1 group-hover:mt-1"></span>
+		<a href="https://mcpedl.com/thanosgauntlet-addon/"
+			class=" flex items-center gap-2 bg-white relative z-20 rounded-md px-4 py-2 border border-gray-900 font-medium hover:text-gray-950 text-gray-700 text-sm"
+			target="_blank" rel="noopener noreferrer">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+				<path
+					d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm2 9h-4v-1h4v1zm0-3v1h-4v-1h4zm-2 13l-6-6h4v-3h4v3h4l-6 6z" />
+			</svg>
+			MCPEDL
+		</a>
+	</li>
+	</footer>
+	</article>
+	</div>
+	</li>
+	</ul>
+	</div>
+	<!--<astro-island uid="2a9GjV" prefix="r3" component-url="/_astro/Experience.7f2e3dbc.js" component-export="default"
+		renderer-url="/_astro/client.de827894.js"
+		props="{&quot;experience&quot;:[1,[[0,{&quot;id&quot;:[0,1],&quot;company&quot;:[0,&quot;Smartclip Spain&quot;],&quot;position&quot;:[0,&quot;Software Engineer&quot;],&quot;date&quot;:[0,&quot;2022 - Present&quot;],&quot;responsabilities&quot;:[1,[[0,&quot;Developed work tools using PHP, Vite, React, JavaScript, Tailwind, and CSS to create interactive and appealing web applications.&quot;],[0,&quot;Implemented code compilation and transpilation using webpack and Babel to enhance compatibility across multiple browsers and ensure optimal performance.&quot;],[0,&quot;Performed code refactoring following best programming practices, optimizing algorithms, and improving code efficiency to achieve optimal application performance.&quot;],[0,&quot;Utilized Git for repository management, enabling effective version control and team collaboration.&quot;],[0,&quot;Integrated Instream and Outstream ad formats, working with video technologies such as HTML5 Video, Video.js, JW Player, and Google IMA SDK to effectively integrate advertising seamlessly into videos.&quot;]]]}],[0,{&quot;id&quot;:[0,2],&quot;company&quot;:[0,&quot;El Economista&quot;],&quot;position&quot;:[0,&quot;Front-end Developer&quot;],&quot;date&quot;:[0,&quot;2021 - 2022&quot;],&quot;responsabilities&quot;:[1,[[0,&quot;Implemented enhancements to Web Vitals metrics, following best development practices to ensure optimal performance and improved user experience.&quot;],[0,&quot;Developed engaging and functional landing pages using HTML, CSS, and JavaScript to create interactive and appealing interfaces.&quot;],[0,&quot;Utilized Figma for design and prototyping, collaborating with the design team to create visually impactful user experiences.&quot;],[0,&quot;Created Web Components using technologies like HTML, CSS, and JavaScript to modularize and reuse components in web application development.&quot;],[0,&quot;Collaborated with the team in implementing new features on the website, contributing ideas and technical solutions to enhance the user experience.&quot;],[0,&quot;Performed markup for landing pages, web sections, and web tools using HTML, CSS, and frameworks like Bootstrap, ensuring visually appealing appearance and intuitive navigation.&quot;],[0,&quot;Refactored existing code, optimizing algorithms and data structures to improve performance, efficiency, and maintainability of the codebase.&quot;],[0,&quot;Applied development best practices, following coding standards, clear documentation, and using static code analysis tools to ensure software quality.&quot;],[0,&quot;Improved ad visibility on the site by implementing development best practices such as lazy loading of ads, using responsive ad formats, and optimizing code for enhanced visibility.&quot;]]]}],[0,{&quot;id&quot;:[0,3],&quot;company&quot;:[0,&quot;PS-Lab&quot;],&quot;position&quot;:[0,&quot;Front-end Developer&quot;],&quot;date&quot;:[0,&quot;2020 - 2021&quot;],&quot;responsabilities&quot;:[1,[[0,&quot;Developed web applications using HTML, CSS, JavaScript, and frameworks like Bootstrap ensuring visually appealing appearance and intuitive navigation.&quot;],[0,&quot;Implemented improvements in Web Vitals metrics, following best development practices to ensure optimal performance and a better user experience.&quot;],[0,&quot;Performed markup for landing pages, web sections, and web tools using HTML, CSS, and frameworks like Bootstrap, ensuring visually appealing appearance and intuitive navigation.&quot;],[0,&quot;Refactored existing code, optimizing algorithms and data structures to improve performance, efficiency, and maintainability of the codebase.&quot;],[0,&quot;Applied development best practices, following coding standards, clear documentation, and using static code analysis tools to ensure software quality.&quot;],[0,&quot;Enhanced ad visibility on the site by implementing development best practices such as lazy loading of ads, using responsive ad formats, and optimizing code for improved visibility.&quot;]]]}],[0,{&quot;id&quot;:[0,4],&quot;company&quot;:[0,&quot;Freelance&quot;],&quot;position&quot;:[0,&quot;Front-end Developer&quot;],&quot;date&quot;:[0,&quot;2018 - 2020&quot;],&quot;responsabilities&quot;:[1,[[0,&quot;Translating design into web using HTML, CSS, and JavaScript.&quot;],[0,&quot;Proficient in Bootstrap for efficient and responsive web development.&quot;],[0,&quot;Utilizing JQuery for enhanced interactivity and dynamic elements in web applications.&quot;],[0,&quot;Expertise in Sass for efficient and modular CSS development.&quot;],[0,&quot;Proficient in Git for version control, enabling effective collaboration and code management.&quot;],[0,&quot;Utilizing web scraping techniques to extract and process data from various sources.&quot;],[0,&quot;Extensive knowledge and experience in ReactJS, Redux, and Styled Components for building scalable and maintainable web applications.&quot;],[0,&quot;Portfolio showcasing more than 10 projects, including GIFsApp, Dashsocialmedia, and FlagsApp.&quot;]]]}]]],&quot;name&quot;:[0,&quot;Experience&quot;]}"
+		ssr="" client="idle" opts="{&quot;name&quot;:&quot;Experience&quot;,&quot;value&quot;:true}" await-children="">
+		<section class="mt-10" id="experience">
+			<div>
+				<h2 class="text-2xl font-bold text-gray-700 my-4" id="experience">Experience</h2>
+			</div>
+			<ul class="mt-4 flex flex-col gap-4">
+				<li class="w-full transition-all" style="opacity:0">
+					<article class="border border-gray-500 rounded-md p-3  bg-white">
+						<header class="grid card-experience w-full">
+							<p class="font-medium text-lg" style="grid-area:companyName">Smartclip Spain</p>
+							<p class="text-sm text-gray-500" style="grid-area:position">Software Engineer</p>
+							<span style="grid-area:date" class="ml-auto">2022 - Present</span>
+							<article style="grid-area:responsabilities;opacity:0">
+								<div class="h-12 overflow-hidden relative">
+									<span
+										class=" absolute w-full h-full overflow-hidden bg-gradient-to-b from-transparent to-white"></span>
+									<div class="text-sm text-gray-500 my-1	">-
+										
+										Developed work tools using PHP, Vite, React, JavaScript, Tailwind, and CSS to create interactive
+										and appealing web applications.
+									</div>
+									<div class="text-sm text-gray-500 my-1	">-
+										
+										Implemented code compilation and transpilation using webpack and Babel to enhance compatibility
+										across multiple browsers and ensure optimal performance.
+									</div>
+									<div class="text-sm text-gray-500 my-1	">-
+										
+										Performed code refactoring following best programming practices, optimizing algorithms, and
+										improving code efficiency to achieve optimal application performance.
+									</div>
+									<div class="text-sm text-gray-500 my-1	">-
+										
+										Utilized Git for repository management, enabling effective version control and team
+										collaboration.
+									</div>
+									<div class="text-sm text-gray-500 my-1	">-
+										
+										Integrated Instream and Outstream ad formats, working with video technologies such as HTML5
+										Video, Video.js, JW Player, and Google IMA SDK to effectively integrate advertising seamlessly
+										into videos.
+									</div>
+								</div>
+								<footer class="flex justify-between pt-4">
+									<div class="relative w-max   ml-auto group">
+										<span
+											class="w-full h-full  bg-gray-500 ml-0.5 mt-0.5 rounded-lg absolute left-0 top-0 group-active:m-0 group-hover:bg-indigo-950 transition-all group-hover:ml-1 group-hover:mt-1"></span>
+										<button
+											class="rounded-md border-gray-600 w-max px-3 py-1.5 text-xs bg-white border z-10 relative font-medium  hover:text-gray-950 text-gray-800 ">Expand</button>
+									</div>
+								</footer>
+							</article>
+						</header>
+					</article>
+				</li>
+				<li class="w-full transition-all" style="opacity:0">
+					<article class="border border-gray-500 rounded-md p-3  bg-white">
+						<header class="grid card-experience w-full">
+							<p class="font-medium text-lg" style="grid-area:companyName">El Economista</p>
+							<p class="text-sm text-gray-500" style="grid-area:position">Front-end Developer</p>
+							<span style="grid-area:date" class="ml-auto">2021 - 2022</span>
+							<article style="grid-area:responsabilities;opacity:0">
+								<div class="h-12 overflow-hidden relative">
+									<span
+										class=" absolute w-full h-full overflow-hidden bg-gradient-to-b from-transparent to-white"></span>
+									<div class="text-sm text-gray-500 my-1	">-
+										
+										Implemented enhancements to Web Vitals metrics, following best development practices to ensure
+										optimal performance and improved user experience.
+									</div>
+									<div class="text-sm text-gray-500 my-1	">-
+										
+										Developed engaging and functional landing pages using HTML, CSS, and JavaScript to create
+										interactive and appealing interfaces.
+									</div>
+									<div class="text-sm text-gray-500 my-1	">-
+										
+										Utilized Figma for design and prototyping, collaborating with the design team to create visually
+										impactful user experiences.
+									</div>
+									<div class="text-sm text-gray-500 my-1	">-
+										
+										Created Web Components using technologies like HTML, CSS, and JavaScript to modularize and reuse
+										components in web application development.
+									</div>
+									<div class="text-sm text-gray-500 my-1	">-
+										
+										Collaborated with the team in implementing new features on the website, contributing ideas and
+										technical solutions to enhance the user experience.
+									</div>
+									<div class="text-sm text-gray-500 my-1	">-
+										
+										Performed markup for landing pages, web sections, and web tools using HTML, CSS, and frameworks
+										like Bootstrap, ensuring visually appealing appearance and intuitive navigation.
+									</div>
+									<div class="text-sm text-gray-500 my-1	">-
+										
+										Refactored existing code, optimizing algorithms and data structures to improve performance,
+										efficiency, and maintainability of the codebase.
+									</div>
+									<div class="text-sm text-gray-500 my-1	">-
+										
+										Applied development best practices, following coding standards, clear documentation, and using
+										static code analysis tools to ensure software quality.
+									</div>
+									<div class="text-sm text-gray-500 my-1	">-
+										
+										Improved ad visibility on the site by implementing development best practices such as lazy
+										loading of ads, using responsive ad formats, and optimizing code for enhanced visibility.
+									</div>
+								</div>
+								<footer class="flex justify-between pt-4">
+									<div class="relative w-max   ml-auto group">
+										<span
+											class="w-full h-full  bg-gray-500 ml-0.5 mt-0.5 rounded-lg absolute left-0 top-0 group-active:m-0 group-hover:bg-indigo-950 transition-all group-hover:ml-1 group-hover:mt-1"></span>
+										<button
+											class="rounded-md border-gray-600 w-max px-3 py-1.5 text-xs bg-white border z-10 relative font-medium  hover:text-gray-950 text-gray-800 ">Expand</button>
+									</div>
+								</footer>
+							</article>
+						</header>
+					</article>
+				</li>
+				<li class="w-full transition-all" style="opacity:0">
+					<article class="border border-gray-500 rounded-md p-3  bg-white">
+						<header class="grid card-experience w-full">
+							<p class="font-medium text-lg" style="grid-area:companyName">PS-Lab</p>
+							<p class="text-sm text-gray-500" style="grid-area:position">Front-end Developer</p>
+							<span style="grid-area:date" class="ml-auto">2020 - 2021</span>
+							<article style="grid-area:responsabilities;opacity:0">
+								<div class="h-12 overflow-hidden relative">
+									<span
+										class=" absolute w-full h-full overflow-hidden bg-gradient-to-b from-transparent to-white"></span>
+									<div class="text-sm text-gray-500 my-1	">-
+										
+										Developed web applications using HTML, CSS, JavaScript, and frameworks like Bootstrap ensuring
+										visually appealing appearance and intuitive navigation.
+									</div>
+									<div class="text-sm text-gray-500 my-1	">-
+										
+										Implemented improvements in Web Vitals metrics, following best development practices to ensure
+										optimal performance and a better user experience.
+									</div>
+									<div class="text-sm text-gray-500 my-1	">-
+										
+										Performed markup for landing pages, web sections, and web tools using HTML, CSS, and frameworks
+										like Bootstrap, ensuring visually appealing appearance and intuitive navigation.
+									</div>
+									<div class="text-sm text-gray-500 my-1	">-
+										
+										Refactored existing code, optimizing algorithms and data structures to improve performance,
+										efficiency, and maintainability of the codebase.
+									</div>
+									<div class="text-sm text-gray-500 my-1	">-
+										
+										Applied development best practices, following coding standards, clear documentation, and using
+										static code analysis tools to ensure software quality.
+									</div>
+									<div class="text-sm text-gray-500 my-1	">-
+										
+										Enhanced ad visibility on the site by implementing development best practices such as lazy
+										loading of ads, using responsive ad formats, and optimizing code for improved visibility.
+									</div>
+								</div>
+								<footer class="flex justify-between pt-4">
+									<div class="relative w-max   ml-auto group">
+										<span
+											class="w-full h-full  bg-gray-500 ml-0.5 mt-0.5 rounded-lg absolute left-0 top-0 group-active:m-0 group-hover:bg-indigo-950 transition-all group-hover:ml-1 group-hover:mt-1"></span>
+										<button
+											class="rounded-md border-gray-600 w-max px-3 py-1.5 text-xs bg-white border z-10 relative font-medium  hover:text-gray-950 text-gray-800 ">Expand</button>
+									</div>
+								</footer>
+							</article>
+						</header>
+					</article>
+				</li>
+				<li class="w-full transition-all" style="opacity:0">
+					<article class="border border-gray-500 rounded-md p-3  bg-white">
+						<header class="grid card-experience w-full">
+							<p class="font-medium text-lg" style="grid-area:companyName">Freelance</p>
+							<p class="text-sm text-gray-500" style="grid-area:position">Front-end Developer</p>
+							<span style="grid-area:date" class="ml-auto">2018 - 2020</span>
+							<article style="grid-area:responsabilities;opacity:0">
+								<div class="h-12 overflow-hidden relative">
+									<span
+										class=" absolute w-full h-full overflow-hidden bg-gradient-to-b from-transparent to-white"></span>
+									<div class="text-sm text-gray-500 my-1	">-
+										
+										Translating design into web using HTML, CSS, and JavaScript.
+									</div>
+									<div class="text-sm text-gray-500 my-1	">-
+										
+										Proficient in Bootstrap for efficient and responsive web development.
+									</div>
+									<div class="text-sm text-gray-500 my-1	">-
+										
+										Utilizing JQuery for enhanced interactivity and dynamic elements in web applications.
+									</div>
+									<div class="text-sm text-gray-500 my-1	">-
+										
+										Expertise in Sass for efficient and modular CSS development.
+									</div>
+									<div class="text-sm text-gray-500 my-1	">-
+										
+										Proficient in Git for version control, enabling effective collaboration and code management.
+									</div>
+									<div class="text-sm text-gray-500 my-1	">-
+										
+										Utilizing web scraping techniques to extract and process data from various sources.
+									</div>
+									<div class="text-sm text-gray-500 my-1	">-
+										
+										Extensive knowledge and experience in ReactJS, Redux, and Styled Components for building
+										scalable and maintainable web applications.
+									</div>
+									<div class="text-sm text-gray-500 my-1	">-
+										
+										Portfolio showcasing more than 10 projects, including GIFsApp, Dashsocialmedia, and FlagsApp.
+									</div>
+								</div>
+								<footer class="flex justify-between pt-4">
+									<div class="relative w-max   ml-auto group">
+										<span
+											class="w-full h-full  bg-gray-500 ml-0.5 mt-0.5 rounded-lg absolute left-0 top-0 group-active:m-0 group-hover:bg-indigo-950 transition-all group-hover:ml-1 group-hover:mt-1"></span>
+										<button
+											class="rounded-md border-gray-600 w-max px-3 py-1.5 text-xs bg-white border z-10 relative font-medium  hover:text-gray-950 text-gray-800 ">Expand</button>
+									</div>
+								</footer>
+							</article>
+						</header>
+					</article>
+				</li>
+			</ul>
+		</section>
+	</astro-island> -->
+	<footer class="my-20 border-t pt-10 border-gray-400 text-sm">
+		<p class="text-center text-slate-600">Made with 🖤 by Santiago Agüero</p>
+	</footer>
+	</main>
+	</div>
 </body>
 
 </html>

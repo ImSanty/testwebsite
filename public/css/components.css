@@ -182,11 +182,13 @@
     background: transparent;
     color: var(--text-primary);
     border-radius: 8px;
+    flex-shrink: 0;
 }
 
 .navbar-toggler-custom:focus {
     box-shadow: none;
     border-color: var(--primary);
+    outline: none;
 }
 
 .nav-cta {

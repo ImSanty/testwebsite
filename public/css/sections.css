@@ -1436,7 +1436,16 @@ footer {
 
     .custom-cursor,
     .cursor-dot {
-        display: none;
+        display: none !important;
+    }
+
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 42px;
+        height: 42px;
+        font-size: 1.1rem;
+        border-radius: 12px;
     }
 }
 
@@ -1447,5 +1456,14 @@ footer {
 
     .hero-buttons .btn {
         text-align: center;
+    }
+
+    .back-to-top {
+        bottom: 16px;
+        right: 16px;
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+        border-radius: 10px;
     }
 }
